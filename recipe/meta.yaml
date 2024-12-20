@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/aesara/aesara-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/a/aesara/aesara-{{ version }}.tar.gz
   sha256: 704eecf24a0165b2eefcf23539eb0f0c5973081ee3b9ecd8a97b80e1f301ad7a
   patches:
 
 build:
-  number: 0
+  number: 1
   # <https://github.com/conda-forge/scipy-feedstock/issues/249>
   skip: true  # [(win and (python_impl == 'pypy')) or py>311]
 
